@@ -13,17 +13,20 @@
 </head>
 <body>
   <h1>Política de Privacidad — OK-SHIP</h1>
-  <p><strong>Última actualización:</strong> 30 de marzo de 2026</p>
-
-  <p>OK-SHIP Consultoría Marítima desarrolló la aplicación móvil OK-SHIP como una herramienta para que sus clientes puedan acceder a información sobre sus embarcaciones, certificados, carenas y observaciones.</p>
+  <p><strong>Última actualización:</strong> 3 de junio de 2026</p>
+  <p>OK-SHIP Consultoría Marítima desarrolló la aplicación móvil OK-SHIP como una herramienta para que sus clientes puedan acceder a información sobre sus embarcaciones, certificados, carenas, observaciones y proyectos.</p>
 
   <h2>Información que recopilamos</h2>
   <p>La aplicación recopila la siguiente información para su funcionamiento:</p>
   <ul>
     <li>RUT del usuario (utilizado como identificador de inicio de sesión)</li>
     <li>Contraseña (almacenada de forma segura y encriptada)</li>
+    <li>Nombre completo y empresa a la que pertenece el usuario</li>
+    <li>Tipo de usuario (cliente principal o sub usuario)</li>
     <li>Información de embarcaciones asociadas al usuario</li>
-    <li>Certificados, carenas y observaciones de cada embarcación</li>
+    <li>Certificados, carenas, observaciones y proyectos de cada embarcación</li>
+    <li>Archivos PDF asociados a embarcaciones (cuadro técnico)</li>
+    <li>Token de notificaciones push para envío de alertas</li>
   </ul>
 
   <h2>Uso de la información</h2>
@@ -32,23 +35,31 @@
     <li>Autenticar al usuario dentro de la aplicación</li>
     <li>Mostrar la información de embarcaciones y documentación asociada</li>
     <li>Garantizar que cada usuario acceda únicamente a sus propios datos</li>
+    <li>Gestionar accesos de sub usuarios a embarcaciones y proyectos específicos asignados por el administrador</li>
+    <li>Enviar notificaciones push diarias sobre certificados y documentos próximos a vencer</li>
+    <li>Almacenar y servir documentos PDF relacionados con las embarcaciones</li>
   </ul>
 
+  <h2>Sub usuarios y acceso delegado</h2>
+  <p>La aplicación permite la creación de sub usuarios asociados a un cliente principal. Cada sub usuario tiene acceso únicamente a las embarcaciones y proyectos que el administrador de OK-SHIP le haya asignado explícitamente. Los sub usuarios no tienen acceso a información de otras embarcaciones ni a datos de otros clientes.</p>
+
+  <h2>Notificaciones push</h2>
+  <p>La aplicación puede enviar notificaciones push diarias para informar al usuario sobre certificados y documentos próximos a vencer. Estas notificaciones se generan localmente en el dispositivo del usuario. El usuario puede desactivarlas en cualquier momento desde la configuración de su dispositivo.</p>
+
   <h2>Almacenamiento y seguridad</h2>
-  <p>Toda la información es almacenada de forma segura en Supabase, una plataforma de base de datos con cifrado de datos en reposo y en tránsito. Implementamos políticas de seguridad a nivel de fila (Row Level Security) para garantizar que cada usuario acceda únicamente a sus propios datos.</p>
+  <p>Toda la información es almacenada de forma segura en Supabase, una plataforma de base de datos con cifrado de datos en reposo y en tránsito. Los archivos PDF se almacenan en Supabase Storage con acceso controlado. Implementamos políticas de seguridad a nivel de fila (Row Level Security) para garantizar que cada usuario acceda únicamente a sus propios datos.</p>
 
   <h2>Compartición de datos</h2>
-  <p>OK-SHIP no vende, intercambia ni transfiere información personal a terceros. Los datos son accesibles únicamente por el equipo de OK-SHIP y el usuario propietario de los datos.</p>
+  <p>OK-SHIP no vende, intercambia ni transfiere información personal a terceros. Los datos son accesibles únicamente por el equipo de OK-SHIP y el usuario propietario de los datos. Los sub usuarios tienen acceso restringido según las asignaciones realizadas por el administrador.</p>
 
   <h2>Retención de datos</h2>
   <p>Los datos se conservan mientras el usuario mantenga una cuenta activa en la aplicación. Si desea eliminar su cuenta y datos asociados, puede solicitarlo contactando a OK-SHIP directamente.</p>
 
   <h2>Contacto</h2>
   <p>Si tienes preguntas sobre esta política de privacidad, puedes contactarnos en:</p>
-  <p>Correos: contacto@ok-ship.cl, palvarez@ok-ship.cl<p>
-  <p>Telefonos: +56 9 8221 3031, +56 9 6420 2679<p>
+  <p>Correos: contacto@ok-ship.cl, palvarez@ok-ship.cl</p>
+  <p>Teléfonos: +56 9 8221 3031, +56 9 6420 2679</p>
   <p><strong>OK-SHIP Consultoría Marítima</strong><br>
   Punta Arenas, Chile</p>
-
 </body>
 </html>

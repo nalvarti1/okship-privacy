@@ -13,8 +13,8 @@
 </head>
 <body>
   <h1>Política de Privacidad — OK-SHIP</h1>
-  <p><strong>Última actualización:</strong> 3 de junio de 2026</p>
-  <p>OK-SHIP Consultoría Marítima desarrolló la aplicación móvil OK-SHIP como una herramienta para que sus clientes puedan acceder a información sobre sus embarcaciones, certificados, carenas, observaciones y proyectos.</p>
+  <p><strong>Última actualización:</strong> 16 de agosto de 2026</p>
+  <p>OK-SHIP Consultoría Marítima desarrolló la aplicación móvil OK-SHIP como una herramienta para que sus clientes puedan acceder y gestionar información sobre sus embarcaciones, certificados, carenas, observaciones y proyectos.</p>
 
   <h2>Información que recopilamos</h2>
   <p>La aplicación recopila la siguiente información para su funcionamiento:</p>
@@ -22,11 +22,12 @@
     <li>RUT del usuario (utilizado como identificador de inicio de sesión)</li>
     <li>Contraseña (almacenada de forma segura y encriptada)</li>
     <li>Nombre completo y empresa a la que pertenece el usuario</li>
-    <li>Tipo de usuario (cliente principal o sub usuario)</li>
+    <li>Tipo de usuario (administrador empresarial, cliente principal o sub usuario)</li>
     <li>Información de embarcaciones asociadas al usuario</li>
     <li>Certificados, carenas, observaciones y proyectos de cada embarcación</li>
     <li>Archivos PDF asociados a embarcaciones (cuadro técnico)</li>
     <li>Token de notificaciones push para envío de alertas</li>
+    <li>Comentarios y retroalimentación enviados voluntariamente por el usuario</li>
   </ul>
 
   <h2>Uso de la información</h2>
@@ -38,13 +39,29 @@
     <li>Gestionar accesos de sub usuarios a embarcaciones y proyectos específicos asignados por el administrador</li>
     <li>Enviar notificaciones push diarias sobre certificados y documentos próximos a vencer</li>
     <li>Almacenar y servir documentos PDF relacionados con las embarcaciones</li>
+    <li>Enviar avisos y comunicados del equipo de OK-SHIP a los clientes</li>
+    <li>Recibir y gestionar retroalimentación de los usuarios para mejorar el servicio</li>
+  </ul>
+
+  <h2>Tipos de usuario</h2>
+  <p>La aplicación cuenta con tres tipos de usuario:</p>
+  <ul>
+    <li><strong>Administrador empresarial:</strong> gestiona de forma autónoma toda la información de su empresa, incluyendo embarcaciones, certificados, carenas, observaciones, proyectos y sub usuarios.</li>
+    <li><strong>Cliente principal:</strong> accede a toda la información de su flota en modo lectura.</li>
+    <li><strong>Sub usuario:</strong> accede únicamente a las embarcaciones y proyectos que le hayan sido asignados explícitamente.</li>
   </ul>
 
   <h2>Sub usuarios y acceso delegado</h2>
-  <p>La aplicación permite la creación de sub usuarios asociados a un cliente principal. Cada sub usuario tiene acceso únicamente a las embarcaciones y proyectos que el administrador de OK-SHIP le haya asignado explícitamente. Los sub usuarios no tienen acceso a información de otras embarcaciones ni a datos de otros clientes.</p>
+  <p>La aplicación permite la creación de sub usuarios asociados a un cliente principal. Cada sub usuario tiene acceso únicamente a las embarcaciones y proyectos que el administrador le haya asignado explícitamente. Los sub usuarios no tienen acceso a información de otras embarcaciones ni a datos de otros clientes.</p>
+
+  <h2>Sistema de avisos</h2>
+  <p>OK-SHIP puede enviar avisos y comunicados directamente a los clientes a través de la aplicación. Estos mensajes pueden ser dirigidos a todos los usuarios, a una empresa específica o a un usuario individual. El usuario puede ver el historial de avisos recibidos en su bandeja de entrada dentro de la app.</p>
+
+  <h2>Retroalimentación</h2>
+  <p>Los usuarios pueden enviar comentarios, sugerencias o reportar problemas a través del botón de retroalimentación disponible en la aplicación. Esta información es utilizada exclusivamente por el equipo de OK-SHIP para mejorar el servicio y no es compartida con terceros.</p>
 
   <h2>Notificaciones push</h2>
-  <p>La aplicación puede enviar notificaciones push diarias para informar al usuario sobre certificados y documentos próximos a vencer. Estas notificaciones se generan localmente en el dispositivo del usuario. El usuario puede desactivarlas en cualquier momento desde la configuración de su dispositivo.</p>
+  <p>La aplicación puede enviar notificaciones push diarias para informar al usuario sobre certificados y documentos próximos a vencer. El usuario puede desactivarlas en cualquier momento desde la configuración de su dispositivo.</p>
 
   <h2>Almacenamiento y seguridad</h2>
   <p>Toda la información es almacenada de forma segura en Supabase, una plataforma de base de datos con cifrado de datos en reposo y en tránsito. Los archivos PDF se almacenan en Supabase Storage con acceso controlado. Implementamos políticas de seguridad a nivel de fila (Row Level Security) para garantizar que cada usuario acceda únicamente a sus propios datos.</p>
